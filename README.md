@@ -30,7 +30,20 @@ If you want to install example data execute `grunt import`.
 
 To display a rough demo start a webserver with
 
-### With Docker and Docker Compose
+### Using Docker
+
+A compiled version of Arethusa is available on [Docker Hub](https://hub.docker.com/r/perseidsproject/arethusa).
+
+If you have Docker installed you can run it locally with the following command:
+
+```
+docker run -p 8081:8081 perseidsproject/arethusa grunt reloading-server
+```
+
+Then visit an example page, such as
+[http://localhost:8081/app/#/staging?doc=1.1](http://localhost:8081/app/#/staging?doc=1.1).
+
+### Building Docker and Docker Compose Locally
 
 ```
 docker-compose build
